@@ -30,7 +30,7 @@ if DEBUG==False:
 
 else:
     print("\033[1;32;40m Running in Development mode")
-    TOKEN = "852053528:AAHL_ryUUJ1JOhenzmI0WDiayAnxxqGFmyU"
+    TOKEN = "1543135974:AAE1aTpE4z_snKjL7wD7XbgQOBzKzrqMFR8"
 
     # TOKEN = "746406709:AAHGsGOKxHwPOhRMdUOM5JNKsVxI2cCTbyQ" #fcxtrader bot
     URL = "https://3a7a746b.ngrok.io/"
