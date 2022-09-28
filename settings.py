@@ -14,14 +14,14 @@ DEBUG = not True
 
 if DEBUG==False:
     print("\033[1;35;40m Running in production mode")
-    TOKEN = "1137661512:AAEig943WBK2aCBhlrDxgpN6Tl__lpxOMUY" #FCX trading bot
-    URL = 'https://fcx-trading.herokuapp.com/'
+    TOKEN = "5312997356:AAFK7PrAnp40TUfC8x6HROakTOuHAy8gHv8" #FCX trading bot
+    URL = 'https://investmentpy.herokuapp.com/'
     try:
         import os
         DATABASE_URL = os.environ['DATABASE_URL']
     except KeyError:
         # DATABASE_URL="postgres://oilzaezgbpfuad:0c38dcf0bdd1cad9456aff15f7b6ae3cb076e5911dcbb5bf266afd5a3710e608@ec2-184-72-236-57.compute-1.amazonaws.com:5432/d3u443uoa0b5os"
-        DATABASE_URL="postgres://jiuyexwrlknkee:183e46190d220e36b4401f4d6d86549ba7107653bb62ddadec6bccecd02c366a@ec2-54-246-89-234.eu-west-1.compute.amazonaws.com:5432/daprusoucv4h82"
+        DATABASE_URL="mongodb+srv://tgbott:tgbott@cluster0.fpptffz.mongodb.net/?retryWrites=true&w=majority"
     db_url = DATABASE_URL.split(":")
 
     DATABASE_URI_VAR =f'postgres+psycopg2:{db_url[1]}:{db_url[2]}:{db_url[3]}'
@@ -30,7 +30,7 @@ if DEBUG==False:
 
 else:
     print("\033[1;32;40m Running in Development mode")
-    TOKEN = "1543135974:AAE1aTpE4z_snKjL7wD7XbgQOBzKzrqMFR8"
+    TOKEN = "5312997356:AAFK7PrAnp40TUfC8x6HROakTOuHAy8gHv8"
 
     # TOKEN = "746406709:AAHGsGOKxHwPOhRMdUOM5JNKsVxI2cCTbyQ" #fcxtrader bot
     URL = "https://3a7a746b.ngrok.io/"
